@@ -51,35 +51,35 @@ const App = () => {
  
 
   useEffect(() => {
-    fetch("/scientists")
+    fetch("/api/scientists")
       .then((res) => res.json())
       .then((data) => setScientists(data))
       .catch((error) => console.log(error.message));
   }, []);
 
   useEffect(() => {
-    fetch("/questions")
+    fetch("/api/questions")
       .then((res) => res.json())
       .then((data) => setQuestions(data))
       .catch((error) => console.log(error.message));
   }, []);
 
   useEffect(() => {
-    fetch("/uniprograms")
+    fetch("/api/uniprograms")
       .then((res) => res.json())
       .then((data) => setPrograms(data))
       .catch((error) => console.log(error.message));
   }, []);
 
   useEffect(() => {
-    fetch("/questions/scientists")
+    fetch("/api/questions/scientists")
       .then((res) => res.json())
       .then((data) => setScientistQuestions(data))
       .catch((error) => console.log(error.message));
   }, []);
 
   useEffect(() => {
-    fetch("/scientists/programs")
+    fetch("/api/scientists/programs")
       .then((res) => res.json())
       .then((data) => setScientistPrograms(data))
       .catch((error) => console.log(error.message));

@@ -24,3 +24,5 @@ yarn-error.log*
 
 # images
 /src/Images
+# Local Netlify folder
+.netlify
